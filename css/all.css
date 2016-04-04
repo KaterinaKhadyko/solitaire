@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: green;
+	height: 100%;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#target {
+	margin: 20px 0 0 300px;
+	width: 150px;
+	height: 250px;
+	border: 1px solid #000;
+	background: url("../images/cards.jpg");
+	background-position: 0px 0px;
+}
+#testImg {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.slot, .stack, #deck, #new-card{
+	border-radius: 11px;
+	width: 100px;
+	height: 150px;
+	float: left;
+	margin: 0 auto;
+	box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+#slots-holder {
+	overflow: hidden;
+	float: right;
+	padding: 10px;
+}
+
+#deck, #new-card {
+	float: left;
+	margin-right: 30px;
+}
+.slot, .stack {
+	margin-right: 30px;
+}
+#cards {
+	width: 100%;
+	margin: 70px 10px 0;
+}
+ .slot:last-of-type, .stack:last-of-type {
+	margin-right: 15px;
+}
+#top {
+	overflow: hidden;
+	position: relative;
+}
+#message {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(200, 200, 200, 0.6);
+	text-align: center;
+}
+#message h1 {
+	text-transform: uppercase;
+	color: #333;
+	margin: 190px 0 0 0;
+	font-size: 50px;
+}
+#message button {
+	width: 150px;
+	height: 60px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid #888;
+	background: #6f5;
+}
+.card {
+	width: 100px;
+	height: 150px;
+	display: inline-block;
+	background-image: url("../images/back3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	border: 1px solid #555;
+}
+
+#deck {
+	position: relative;
+	margin: 10px;
+}
+#deck div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.stack {
+	position: relative;
+}
+.stack>.card {
+	margin-bottom: -135px;
+}
+.stack>.card:first-child {
+	margin-top: 0;
+}
+.hidden {
+	display: none;
+}
+.card>.card {
+	margin-top: 20px; 
+}
+#new-card {
+	position: relative;
+	border: none;
+	margin: 10px;
+	box-shadow: none;
+}
+
+#new-card .card {
+	position: absolute !important;
+	display: block;
+}
+.final .card {
+	margin-top: 0;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Solitaire</title>
+    <link rel="stylesheet" href="css/all.css" type="text/css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="field">
+        <div id="top">
+          <div id="deck"></div>
+          <div id="new-card"></div>
+          <div id="slots-holder">
+            <div class="slot final" id="slot1"></div>
+            <div class="slot final" id="slot2"></div>
+            <div class="slot final" id="slot3"></div>
+            <div class="slot final" id="slot4"></div>
+          </div>
+        </div>
+        <div id="cards">
+          <div class="slot stack" id="stack1"></div>
+          <div class="slot stack" id="stack2"></div>
+          <div class="slot stack" id="stack3"></div>
+          <div class="slot stack" id="stack4"></div>
+          <div class="slot stack" id="stack5"></div>
+          <div class="slot stack" id="stack6"></div>
+          <div class="slot stack" id="stack7"></div>
+        </div>
+      </div>
+    </div>
+    <div id="message">
+      <h1>You win!</h1>
+      <button id="button">play again</button>
+    </div>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/drag-manager.js"></script>
+  	<script type="text/javascript" src="js/solitaire.js"></script>    
+  </body>
+ </html>
